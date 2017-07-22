@@ -8,15 +8,18 @@ from welcome.objects import Dice
 from welcome.serializers import DiceSerializer
 
 def welcome_view(request):
+    '''Says welcome'''
     return HttpResponse('Welcome to Grupy-PR!')
 
 
 def dice_roll(request):
+    '''Rolls a dice'''
     number = random.randint(1, 6)
     return HttpResponse(number)
 
 @api_view(['GET'])
 def api_dice_roll(request):
+    '''rolls a dice using object'''
     n_faces = int(request.GET.get('size', 6))
     dice = Dice(n_faces)
     dice.roll()
