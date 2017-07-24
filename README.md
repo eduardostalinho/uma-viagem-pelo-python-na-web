@@ -1,7 +1,7 @@
 Viajando com python na Web
 --------------------------
 
-Código da palestra aprensentada no PythonDay do OpenDevCommunity
+Código da palestra apresentada no PythonDay do OpenDevCommunity
 em Curitiba no dia dia 22 de julho de 2017.
 
 Antes de rodar os exemplos:
